@@ -1,9 +1,10 @@
 import './App.css';
-import { Header } from "./components/header.js"
+import { FreeAccount } from "./sections/freeaccount/freeaccount"
+
 function App() {
   return (
     <div className="App">
-      
+      <FreeAccount />
     </div>
   );
 }

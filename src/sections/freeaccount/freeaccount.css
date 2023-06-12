@@ -1,0 +1,36 @@
+.free-container {
+    width: 100%;
+    background-color: #1e40af;
+    background-image: url('../../assets/images/bg-actions.jpg');
+    background-position: 50%;
+    background-size: cover;
+    padding: 60px 0;
+}
+.free-container .button {
+    height: auto;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 20px;
+    width: 100%;
+}
+.free-container .button a{
+    background-color: #f59e0b;
+    border-bottom: 5px solid #d97706;
+    border-radius: 5px;
+    color: #292524;
+    display: block;
+    font-family: 'Cabin', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+.free-container .button a:hover{
+    background-color: #d97706;
+    border-bottom: 5px solid #b45309;
+}
