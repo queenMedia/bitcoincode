@@ -1,9 +1,9 @@
 import './App.css';
-import { Header } from "./components/header.js"
+import { Faqs } from './sections/faq/faqs';
 function App() {
   return (
     <div className="App">
-      
+      <Faqs />
     </div>
   );
 }
