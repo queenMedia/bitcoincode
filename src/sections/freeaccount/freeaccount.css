@@ -28,6 +28,8 @@
     text-align: center;
     text-decoration: none;
     transition: all .3s ease-in-out;
+}
+.free-container .button-free a {
     text-transform: uppercase;
 }
 .free-container .button a:hover{
