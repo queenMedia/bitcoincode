@@ -1,0 +1,30 @@
+.faqs-section {
+    height: auto;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+}
+.faqs-section .faqs-container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 20px;
+    width: 100%;
+}
+.faqs-section .faqs-container h2 {
+    color: #1e40af;
+    font-family: "Cabin", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.faqs-section .faqs-container .faqs-elements {
+    align-items: flex-start;
+    counter-reset: section;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0;
+}
