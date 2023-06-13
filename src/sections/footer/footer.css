@@ -1,0 +1,53 @@
+.footer {
+    background-color: #fff;
+    height: auto;
+    padding: 80px 0;
+    position: relative;
+    width: 100%; 
+}
+.footer .footer-container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 20px;
+    width: 100%;
+}
+.footer .footer-container .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.footer .footer-container .footer-menu .footer-item {
+    list-style: none;
+}
+.footer .footer-container .footer-menu .footer-item a {
+    color: #1e40af;
+    display: block;
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer .footer-container .footer-logo {
+    height: auto;
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+    width: 100%;
+}
+.footer .footer-container .footer-logo a {
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.footer .footer-container .footer-logo a img{
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-style: none;
+    vertical-align: middle;
+}

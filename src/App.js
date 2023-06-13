@@ -1,9 +1,9 @@
 import './App.css';
-import { Header } from "./components/header.js"
+import { Footer } from "../src/sections/footer/footer"
 function App() {
   return (
     <div className="App">
-      
+      <Footer />
     </div>
   );
 }
