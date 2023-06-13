@@ -1,0 +1,7 @@
+@media (max-width: 425px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+  }
