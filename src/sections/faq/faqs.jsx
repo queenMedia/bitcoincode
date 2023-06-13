@@ -1,7 +1,8 @@
+import "./faqs.responsive.css";
 import "./faqs.css";
 
 import { faqs } from "../../../src/assets/utils/faqs"
-import { FaqElement } from "../../components/faqElement/faqElement";
+import { FaqElement } from "../../components/faqelement/faqelement";
 
 export const Faqs = () => {
     
