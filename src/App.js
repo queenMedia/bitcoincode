@@ -1,12 +1,11 @@
 import './App.css';
-import { FreeAccount } from "./sections/freeaccount/freeaccount"
-import { InitOperating } from "./sections/initoperating/initoperating"
+import { Actions } from "./sections/actions/actions"
 
 function App() {
   return (
     <div className="App">
-      <FreeAccount />
-      <InitOperating />
+      <Actions text="Abra una cuenta gratuita" isUppercase />
+      <Actions text="Comience a operar" />
     </div>
   );
 }

@@ -1,25 +1,25 @@
-.free-container {
+.actions-section {
     width: 100%;
-    background-color: #1e40af;
+    background-color: var(--bs-primary);
     background-image: url('../../assets/images/bg-actions.jpg');
     background-position: 50%;
     background-size: cover;
     padding: 60px 0;
 }
-.free-container .button {
+.actions-section .button {
     height: auto;
     margin: 0 auto;
     max-width: 1500px;
     padding: 0 20px;
     width: 100%;
 }
-.free-container .button a{
-    background-color: #f59e0b;
-    border-bottom: 5px solid #d97706;
+.actions-section .button a{
+    background-color: var(--bs-button);
+    border-bottom: 5px solid var(--bs-button-d);
     border-radius: 5px;
-    color: #292524;
+    color: var(--bs-dark);
     display: block;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--font-text);
     font-size: 23px;
     font-weight: 800;
     margin: 0 auto;
@@ -29,10 +29,10 @@
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
-.free-container .button-free a {
+.actions-section .button-uppercase a {
     text-transform: uppercase;
 }
-.free-container .button a:hover{
-    background-color: #d97706;
-    border-bottom: 5px solid #b45309;
+.actions-section .button a:hover{
+    background-color: var(--bs-button-d);
+    border-bottom: 5px solid var(--bs-button-b);
 }

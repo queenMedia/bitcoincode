@@ -1,0 +1,32 @@
+@media screen and (max-width: 1440px) {
+    .actions-section .button {
+        max-width: 1200px !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .actions-section .button {
+        max-width: 960px !important;
+    }
+}
+@media screen and (max-width: 990px) {
+    .actions-section .button {
+        max-width: 800px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .actions-section {
+        padding: 30px 0 !important;
+    }
+    .actions-section .button {
+        max-width: 540px !important;
+    }
+    .actions-section .button a{
+        font-size: 18px !important;
+    }
+}
+
+
+
+
+
+
