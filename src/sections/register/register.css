@@ -1,7 +1,7 @@
 .register {
     width: 100%;
     min-height: 439px;
-    height: 439px;
+    height: fit-content;
     padding: 50px 100px;
     display: flex;
     gap: 20px;
@@ -37,5 +37,5 @@
     width: 510px;
     height: 430px;
     position: relative;
-    bottom: 40px;
+    bottom: -50px;
 }
