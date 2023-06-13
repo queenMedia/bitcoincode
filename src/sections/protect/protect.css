@@ -1,0 +1,49 @@
+.protect {
+    min-height: 88px;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    max-width: 60%;
+    height: auto;
+    max-height: 60px;
+}
+
+.money-content {
+    display: flex;
+    max-width: 60%;
+    height: auto;
+    max-height: 60px;
+    justify-content: flex-start;
+}
+
+.green-money {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--text-green);
+    font-size: 28px;
+    margin: auto;
+}
+
+.green-money-small {
+    color: var(--text-green);
+    font-size: 15px;
+    margin: 0;
+}
+
+.black-money {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    margin: auto;
+}
+
+.black-money-small {
+    font-size: 15px;
+    margin: 0;
+}

@@ -1,0 +1,38 @@
+.register {
+    min-height: 439px;
+    height: 439px;
+    padding: 50px 100px;
+    display: flex;
+    gap: 20px;
+    background: var(--bg-register) no-repeat center/cover;
+}
+.register::after {
+    width: 410px;
+    height: 439px;
+    display: block;
+    content: "";
+    background: var(--bg-register-woman) no-repeat center/contain;
+}
+
+.article {
+    max-width: 1000px;
+}
+
+.article-title {
+    color: var(--text-purple);
+    font-size: clamp(30px, 4vw, 50px);
+}
+
+.title-offer{
+    font-size: clamp(30px, 4vw, 50px);
+    color: var(--text-purple-light);
+}
+
+.article-content {
+    font-size: 15px;
+}
+
+.woman-image {
+    max-width: 410px;
+    height: auto;
+}
