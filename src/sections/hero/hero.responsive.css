@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .content-container {
+       flex-direction: column;
+    }
+}
+
+@media (max-width: 535px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    .content-container {
+       padding: 0;
+    }
+}
