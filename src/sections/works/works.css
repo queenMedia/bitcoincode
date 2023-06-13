@@ -1,11 +1,20 @@
-.cards-section {
+.cards-section-works {
     width: 100%;
     min-height: 487px;
     padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    
+}
+
+.cardContent-works{
+    max-width: 80%;
+    min-height: 387px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     justify-items: center;
     align-items: center;
-    gap: 20px;
     background: var(--bg-color-blue);
 }

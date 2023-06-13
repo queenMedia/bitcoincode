@@ -1,11 +1,14 @@
 .card {
     width: 100%;
+    height: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: var(--text-purple);
-    border-bottom: solid 4px var(--text-purple-light);
+    border-bottom: solid 8px var(--text-purple-light);
+    border-radius: 8px;
 }
 
 .img-icon-card {

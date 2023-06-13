@@ -1,0 +1,26 @@
+.puprle-light-header-card{
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-white);
+    background: var(--text-purple-light);
+}
+
+.purple-header-card{
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-white);
+    background: var(--text-purple);
+}
+
+.blue-header-card{
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-white);
+    background: var(--bg-color-blue);
+}
