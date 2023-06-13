@@ -1,4 +1,6 @@
 import "./footer.css";
+import "./footer.responsive.css";
+
 import { footerItems } from "../../assets/utils/utils.footer.menu.js"
 import logo from "../../../src/assets/images/logo.png"
 
