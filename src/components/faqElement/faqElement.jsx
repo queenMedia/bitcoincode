@@ -1,5 +1,5 @@
-import "./faqelement.responsive.css";
-import "./faqelement.css";
+import "./faqElement.responsive.css";
+import "./faqElement.css";
 
 export const FaqElement = ({currentFaq}) => {
     

@@ -2,7 +2,7 @@ import "./faqs.responsive.css";
 import "./faqs.css";
 
 import { faqs } from "../../../src/assets/utils/faqs"
-import { FaqElement } from "../../components/faqelement/faqelement";
+import { FaqElement } from "../../components/faqElement/faqElement";
 
 export const Faqs = () => {
     
