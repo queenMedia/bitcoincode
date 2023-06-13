@@ -9,3 +9,14 @@
     gap: 20px;
     background: var(--bg-color-blue);
 }
+
+.cardContent{
+    max-width: 80%;
+    min-height: 387px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+    align-items: center;
+    background: var(--bg-color-blue);
+}

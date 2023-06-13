@@ -1,4 +1,5 @@
 import "./cards.css";
+import "./cards.responsive.css";
 import { Card } from "../../components/card/card";
 import iconOne from "../../assets/images/1.png";
 import iconTwo from "../../assets/images/2.png";
@@ -27,9 +28,11 @@ export const Cards = (props) => {
   ]
   return (
     <section className="cards-section">
+      <div className="cardContent">
         {cardsContent.map(({image, alt ,title, content}) => (
-        <Card image={image} alt={alt} title={title} content={content} />
-      ))}
+          <Card image={image} alt={alt} title={title} content={content} />
+        ))}
+      </div>
     </section>
   );
 };
