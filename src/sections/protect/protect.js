@@ -1,4 +1,5 @@
 import "./protect.css";
+import "./protect.responsive.css";
 import bitgo from "../../assets/images/bit-go.png"
 import norton from "../../assets/images/norton.png"
 import securetrading from "../../assets/images/secure-trading.png"

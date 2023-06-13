@@ -1,4 +1,5 @@
 import "./register.css";
+import "./register.responsive.css";
 import woman from "../../assets/images/women-one.png"
 
 export const Register = (props) => {
@@ -16,7 +17,7 @@ export const Register = (props) => {
             pero obtener altos beneficios en el mercado. Cientos de usuarios han declarado altos rendimientos con este producto.
         </p>
     </article>
-    {/* <img src={woman} alt="woman coin" className="woman-image" /> */}
+    <img src={woman} alt="woman coin" className="woman-image" />
    </section>
   );
 };

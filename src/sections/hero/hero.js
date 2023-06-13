@@ -1,5 +1,6 @@
 import { Form } from "../../components/form/form";
 import "./hero.css";
+import "./hero.responsive.css";
 import video from "../../../src/assets/videos/banner.mp4";
 export const Hero = (props) => {
   return (

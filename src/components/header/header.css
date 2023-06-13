@@ -8,4 +8,5 @@
 
 .image {
     max-width: 280px;
+    min-width: 100px;
 }

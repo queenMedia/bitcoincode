@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .register {
+       height: max-content;
+       padding: 50px 30px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .woman-image {
+        width: 60%;
+        height: auto;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 535px) {
+    .register {
+        padding: 50px 10px;
+       
+    }
+}
