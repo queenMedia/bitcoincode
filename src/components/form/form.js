@@ -15,7 +15,6 @@ export const Form = () => {
   const [ipAddress, setIPAddress] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [color, setColor] = useState("#ffffff");
 
   useEffect(() => {
     const fetchIPAddress = async () => {
