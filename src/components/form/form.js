@@ -76,28 +76,13 @@ export const Form = () => {
         const urlRedirect = `${url}&idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=Invest in Amazon`;
         window.location.href = urlRedirect;
       } else {
-        await sendLead({ values: params })
-        .then(data => {
-            if(data.result == 1) {
-                swal("", "¡Éxito! pronto nos pondremos en contacto con usted.", "success");
-              
-                if (data.autoLogin && isValidUrl(data.autoLogin)) {
-                  setTimeout(() => { window.location.href = data.autoLogin; }, 4000);
-                }
-
-                setName("");
-                setLastName("");
-                setEmail("");
-                setPhoneNumber("");
-            } else {
-                swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
-            }
-            setLoading(false);
-        })
-        .catch(error => {
-          swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
-          setLoading(false);
-        });
+    
+        setName("");
+        setLastName("");
+        setEmail("");
+        setPhoneNumber("");
+        setErrorMessage("");
+        setLoading(false);
       }  
       
     } catch (error) {
@@ -129,16 +114,19 @@ export const Form = () => {
           <input
             placeholder="Nombre"
             className="form-input"
+            value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             placeholder="Apellidos"
             className="form-input"
+            value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
           <input
             placeholder="Correo Electrónico"
             className="form-input"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <div className="form-input-group">
@@ -147,6 +135,7 @@ export const Form = () => {
               placeholder="Número de Teléfono"
               className="input-for-form-input-group"
               type="number"
+              value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
