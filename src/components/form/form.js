@@ -1,12 +1,21 @@
 import "./form.css";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, CSSProperties } from "react";
+import PropagateLoader from "react-spinners/PropagateLoader";
+const override = {
+  display: "block",
+  margin: "0 auto",
+  borderColor: "red",
+};
 export const Form = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [ipAddress, setIPAddress] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
+  const [color, setColor] = useState("#ffffff");
 
   useEffect(() => {
     const fetchIPAddress = async () => {
@@ -24,20 +33,17 @@ export const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!name || !lastName || !email || !phoneNumber || !ipAddress) {
+      setErrorMessage("por favor complete todos los campos");
+      return;
+    }
+    setLoading(true);
 
-    console.log("Name:", name);
-    console.log("Last Name:", lastName);
-    console.log("Email:", email);
-    console.log("Phone Number:", phoneNumber);
-    console.log("ipAddress", ipAddress);
+    console.log({ name, lastName, email, phoneNumber, ipAddress });
     const url =
       window.location.origin +
       window.location.pathname +
       window.location.search;
-    console.log(
-      "url",
-      window.location.origin + window.location.pathname + window.location.search
-    );
 
     let data = {
       first_name: name,
@@ -57,7 +63,13 @@ export const Form = () => {
       setEmail("");
       setPhoneNumber("");
     } catch (error) {
+      setLoading(false);
+      setName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
       console.log(error.message);
+      setErrorMessage("por favor ingrese un correo electrónico y un número de teléfono válidos");
     }
   };
 
@@ -72,35 +84,40 @@ export const Form = () => {
         </span>{" "}
         NO ESPERE
       </h1>
-      <div className="body-form">
-        <input
-          placeholder="Nombre"
-          className="form-input"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          placeholder="Apellidos"
-          className="form-input"
-          onChange={(e) => setLastName(e.target.value)}
-        />
-        <input
-          placeholder="Correo Electrónico"
-          className="form-input"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <div className="form-input-group">
-          <span className="country"> +51</span>
+      {loading ? (
+        <PropagateLoader cssOverride={override} />
+      ) : (
+        <div className="body-form">
           <input
-            placeholder="Número de Teléfono"
-            className="input-for-form-input-group"
-            onChange={(e) => setPhoneNumber(e.target.value)}
+            placeholder="Nombre"
+            className="form-input"
+            onChange={(e) => setName(e.target.value)}
           />
+          <input
+            placeholder="Apellidos"
+            className="form-input"
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <input
+            placeholder="Correo Electrónico"
+            className="form-input"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <div className="form-input-group">
+            <span className="country"> +51</span>
+            <input
+              placeholder="Número de Teléfono"
+              className="input-for-form-input-group"
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+          </div>
+          <p style={{ "margin-bottom": "5px" , "color":"red" , "fontSize" : "12px" , "text-align":"center" }}>{errorMessage}</p>
+          <button type="submit" className="button-submit">
+            {" "}
+            COMIENCE A OPERAR
+          </button>
         </div>
-        <button type="submit" className="button-submit">
-          {" "}
-          COMIENCE A OPERAR
-        </button>
-      </div>
+      )}
       <small className="warning">
         Al completar este formulario, entiendo que seré redirigido a un socio de
         trading de terceros y que se compartirá mi información personal.
