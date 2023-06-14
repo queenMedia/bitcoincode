@@ -12,7 +12,7 @@ export const Hero = (props) => {
       Y tú puedes convertirte en el <span className="yellow-text">próximo millonario...</span>
       </h3>
       <div className="content-container">
-        <video src={video} controlslist="nodownload" preload="auto" className="video" controls loop muted>
+        <video src={video} controlsList="nodownload" preload="auto" className="video" controls loop muted>
           Tu navegador no admite la etiqueta de video.
         </video>
         <Form />
