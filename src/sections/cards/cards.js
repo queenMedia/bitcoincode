@@ -29,8 +29,8 @@ export const Cards = (props) => {
   return (
     <section className="cards-section">
       <div className="cardContent">
-        {cardsContent.map(({image, alt ,title, content}) => (
-          <Card image={image} alt={alt} title={title} content={content} />
+        {cardsContent.map(({image, alt ,title, content}, index) => (
+          <Card key={index} image={image} alt={alt} title={title} content={content} />
         ))}
       </div>
     </section>

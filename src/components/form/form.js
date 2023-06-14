@@ -30,7 +30,7 @@ export const Form = () => {
     console.log("Email:", email);
     console.log("Phone Number:", phoneNumber);
     console.log("ipAddress", ipAddress);
-    console.log("url", window.location.href);
+    console.log("url", window.location.origin + window.location.pathname + window.location.search);
 
     setName("");
     setLastName("");
