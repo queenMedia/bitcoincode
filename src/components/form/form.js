@@ -22,7 +22,7 @@ export const Form = () => {
     fetchIPAddress();
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     console.log("Name:", name);
@@ -30,12 +30,35 @@ export const Form = () => {
     console.log("Email:", email);
     console.log("Phone Number:", phoneNumber);
     console.log("ipAddress", ipAddress);
-    console.log("url", window.location.origin + window.location.pathname + window.location.search);
+    const url =
+      window.location.origin +
+      window.location.pathname +
+      window.location.search;
+    console.log(
+      "url",
+      window.location.origin + window.location.pathname + window.location.search
+    );
 
-    setName("");
-    setLastName("");
-    setEmail("");
-    setPhoneNumber("");
+    let data = JSON.stringify({
+      first_name: name,
+      last_name: lastName,
+      email: email,
+      phone: phoneNumber.replace(/\s/g, ""),
+      ip: ipAddress,
+      url: url,
+      token: "9e4f669c32cdc317998cb41e5375cffb",
+    });
+
+    try {
+      const resp = await axios.post("http://localhost:3030/pushLead", data);
+      console.log(resp.data);
+      setName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   return (
