@@ -70,28 +70,35 @@ export const Form = () => {
     };
 
     try {
-      await sendLead({ values: params })
-      .then(data => {
-          if(data.result == 1) {
-              swal("", "¡Éxito! pronto nos pondremos en contacto con usted.", "success");
-            
-              if (data.autoLogin && isValidUrl(data.autoLogin)) {
-                setTimeout(() => { window.location.href = data.autoLogin; }, 4000);
-              }
 
-              setName("");
-              setLastName("");
-              setEmail("");
-              setPhoneNumber("");
-          } else {
-              swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
-          }
+      if (window.location.search.includes("aff_sub")) {
+        const url = window.location.href.replace(`${window.location.origin}/`, "https://www.martinviz.com/article/martin-vizcarra-asegura-dejar-la-presidencia-de-peru-con-la-frente-en-alto/thanku/");
+        const urlRedirect = `${url}&idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=Invest in Amazon`;
+        window.location.href = urlRedirect;
+      } else {
+        await sendLead({ values: params })
+        .then(data => {
+            if(data.result == 1) {
+                swal("", "¡Éxito! pronto nos pondremos en contacto con usted.", "success");
+              
+                if (data.autoLogin && isValidUrl(data.autoLogin)) {
+                  setTimeout(() => { window.location.href = data.autoLogin; }, 4000);
+                }
+
+                setName("");
+                setLastName("");
+                setEmail("");
+                setPhoneNumber("");
+            } else {
+                swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
+            }
+            setLoading(false);
+        })
+        .catch(error => {
+          swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
           setLoading(false);
-      })
-      .catch(error => {
-        swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
-        setLoading(false);
-      });    
+        });
+      }  
       
     } catch (error) {
       setLoading(false);
@@ -139,6 +146,7 @@ export const Form = () => {
             <input
               placeholder="Número de Teléfono"
               className="input-for-form-input-group"
+              type="number"
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
