@@ -1,6 +1,10 @@
 import "./form.css";
 import axios from "axios";
 import { useState, useEffect, CSSProperties } from "react";
+
+import swal from 'sweetalert';
+import { sendLead, isValidUrl } from "./service";
+
 import PropagateLoader from "react-spinners/PropagateLoader";
 const override = {
   display: "block",
@@ -54,13 +58,41 @@ export const Form = () => {
       token: "9e4f669c32cdc317998cb41e5375cffb",
     };
 
+    const params = {
+      idnombre: data.first_name,
+      idapellidos: data.last_name,
+      idphone: data.phone,
+      idcorreo: data.email,
+      phonecode: '51',
+      country: 'PE',
+      source: `${window.location.href}`,
+      landing: "Invest in Bitcoin Code"
+    };
+
     try {
-      const resp = await axios.post("http://offerback.us-east-1.elasticbeanstalk.com/pushLead", data);
-      console.log(resp.data);
-      setName("");
-      setLastName("");
-      setEmail("");
-      setPhoneNumber("");
+      await sendLead({ values: params })
+      .then(data => {
+          if(data.result == 1) {
+              swal("", "¡Éxito! pronto nos pondremos en contacto con usted.", "success");
+            
+              if (data.autoLogin && isValidUrl(data.autoLogin)) {
+                setTimeout(() => { window.location.href = data.autoLogin; }, 4000);
+              }
+
+              setName("");
+              setLastName("");
+              setEmail("");
+              setPhoneNumber("");
+          } else {
+              swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
+          }
+          setLoading(false);
+      })
+      .catch(error => {
+        swal("", "Vaya, algo salió mal, inténtalo de nuevo.", "error");
+        setLoading(false);
+      });    
+      
     } catch (error) {
       setLoading(false);
       setName("");
