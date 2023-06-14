@@ -39,7 +39,7 @@ export const Form = () => {
       window.location.origin + window.location.pathname + window.location.search
     );
 
-    let data = JSON.stringify({
+    let data = {
       first_name: name,
       last_name: lastName,
       email: email,
@@ -47,7 +47,7 @@ export const Form = () => {
       ip: ipAddress,
       url: url,
       token: "9e4f669c32cdc317998cb41e5375cffb",
-    });
+    };
 
     try {
       const resp = await axios.post("http://localhost:3030/pushLead", data);
@@ -73,14 +73,27 @@ export const Form = () => {
         NO ESPERE
       </h1>
       <div className="body-form">
-        <input placeholder="Nombre" className="form-input" />
-        <input placeholder="Apellidos" className="form-input" />
-        <input placeholder="Correo Electrónico" className="form-input" />
+        <input
+          placeholder="Nombre"
+          className="form-input"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          placeholder="Apellidos"
+          className="form-input"
+          onChange={(e) => setLastName(e.target.value)}
+        />
+        <input
+          placeholder="Correo Electrónico"
+          className="form-input"
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <div className="form-input-group">
           <span className="country"> +51</span>
           <input
             placeholder="Número de Teléfono"
             className="input-for-form-input-group"
+            onChange={(e) => setPhoneNumber(e.target.value)}
           />
         </div>
         <button type="submit" className="button-submit">
