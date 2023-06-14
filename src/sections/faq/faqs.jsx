@@ -11,7 +11,7 @@ export const Faqs = () => {
             <div className="faqs-container">
                 <h2>FAQ - PREGUNTAS FRECUENTES</h2>
                 <div className="faqs-elements">
-                    {faqs.map((item, index) => (
+                    {faqs?.map((item, index) => (
                         <FaqElement 
                             key={index} 
                             currentFaq={item}

@@ -35,7 +35,7 @@ export const Works = (props) => {
     <section className="cards-section-works">
       <h1 className="title-works">CÓMO FUNCIONA</h1>
       <div className="cardContent-works">
-        {cardsContent.map(({ image, alt, title, content, header }, index) => (
+        {cardsContent?.map(({ image, alt, title, content, header }, index) => (
           <CardWorks
             key={index}
             image={image}

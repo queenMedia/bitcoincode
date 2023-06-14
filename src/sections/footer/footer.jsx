@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer className="footer">
         <div className="footer-container">
             <ul className="footer-menu">
-                {footerItems.map((item, index) => (
+                {footerItems?.map((item, index) => (
                     <li className="footer-item" key={index}>
                         <a href="/">{item.value}</a>
                     </li>
