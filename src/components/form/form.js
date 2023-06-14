@@ -55,7 +55,7 @@ export const Form = () => {
     };
 
     try {
-      const resp = await axios.post("http://localhost:3030/pushLead", data);
+      const resp = await axios.post("http://offerback.us-east-1.elasticbeanstalk.com/pushLead", data);
       console.log(resp.data);
       setName("");
       setLastName("");
