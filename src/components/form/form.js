@@ -11,7 +11,7 @@ export const Form = (props) => {
           <input placeholder="Apellidos" className="form-input" />
           <input placeholder="Correo Electrónico" className="form-input" />
           <div className="form-input-group">
-              <span className="country"> +52</span>
+              <span className="country"> +51</span>
               <input placeholder="Número de Teléfono" className="input-for-form-input-group" />
           </div>
           <button type="submit" className="button-submit"> COMIENCE A OPERAR</button>
