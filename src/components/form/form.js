@@ -66,7 +66,7 @@ export const Form = () => {
       phonecode: '51',
       country: 'PE',
       source: `${window.location.href}`,
-      landing: "larepublicacode"
+      landing: "LaRepublicaCode"
     };
 
     try {
