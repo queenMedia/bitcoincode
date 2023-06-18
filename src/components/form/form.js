@@ -75,7 +75,7 @@ export const Form = () => {
         const url = window.location.href.replace(`${window.location.origin}/bitcoin-code`, "https://www.martinviz.com/article/martin-vizcarra-asegura-dejar-la-presidencia-de-peru-con-la-frente-en-alto/thanku");
         const urlRedirect = `${url}?idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
         console.log({urlRedirect})
-        // window.location.href = urlRedirect;
+        window.location.href = urlRedirect;
       // } else {
     
       //   setName("");
