@@ -1,0 +1,38 @@
+.actions-section {
+    width: 100%;
+    background-color: var(--bs-primary);
+    background-image: url('../../assets/images/bg-actions.jpg');
+    background-position: 50%;
+    background-size: cover;
+    padding: 60px 0;
+}
+.actions-section .button {
+    height: auto;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 20px;
+    width: 100%;
+}
+.actions-section .button a{
+    background-color: var(--bs-button);
+    border-bottom: 5px solid var(--bs-button-d);
+    border-radius: 5px;
+    color: var(--bs-dark);
+    display: block;
+    font-family: var(--font-text);
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.actions-section .button-uppercase a {
+    text-transform: uppercase;
+}
+.actions-section .button a:hover{
+    background-color: var(--bs-button-d);
+    border-bottom: 5px solid var(--bs-button-b);
+}

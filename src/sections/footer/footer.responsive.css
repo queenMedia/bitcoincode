@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .footer-menu {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+}

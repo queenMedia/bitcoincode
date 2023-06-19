@@ -1,0 +1,25 @@
+.cards-section-works {
+    width: 100%;
+    min-height: 487px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardContent-works{
+    max-width: 80%;
+    min-height: 387px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+    align-items: center;
+    background: var(--bg-color-blue);
+}
+
+.title-works {
+    font-size: clamp(30px, 4vw, 55px);;
+    color: var(--bg-color-blue);
+}

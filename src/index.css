@@ -1,13 +1,80 @@
+:root {
+  --bs-blue: #0f4dfd;
+  --bs-blue-dark: #211154;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: red;
+  --bs-red-dark: #c6251d;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #e9d500;
+  --bs-yellow-l: #ffc501;
+  --bs-green: #047857;
+  --bs-green-btn-dark: #34a853;
+  --bs-green-btn-light: #36cc1e;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-pattens-blue: #dbeafe;
+  --bs-mercury: #e7e5e4;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-loading: #c6c6c6;
+  --bs-gray-label: #a19ca5;
+  --bs-gray-input: #bfc3c8;
+  --bs-gray-input-border: #9ca3af;
+  --bs-gray-light: #ddd;
+  --bs-gray-dark: #425563;
+  --bs-primary: #1e40af;
+  --bs-secondary: #4c1d95;
+  --bs-tertiary: #7c3aed;
+  --bs-header: #372797;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-black: #000;
+  --bs-dark: #292524;
+  --bs-graylighter: #f3f3f3;
+  --bs-graydark: #a9a9a9;
+  --bs-footer: #e5e5e5;
+  --bs-heading: #030729;
+  --bs-body: #66666b;
+  --bs-button: #f59e0b;
+  --bs-button-d: #d97706;
+  --bs-button-b: #b45309;
+  --font-text: "Cabin",sans-serif;
+  --font-awesome: "Font Awesome 6 Free";
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));
+}
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bs-white);
+  color: var(--bs-dark);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+

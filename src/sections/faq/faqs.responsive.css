@@ -1,0 +1,33 @@
+@media screen and (max-width: 1440px) {
+    .faqs-section .faqs-container {
+        max-width: 1200px !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .faqs-section .faqs-container {
+        max-width: 960px !important;
+    }
+}
+@media screen and (max-width: 990px) {
+    .faqs-section .faqs-container {
+        max-width: 800px !important;
+    }
+    .faqs-section .faqs-container h2 {
+        font-size: 28px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .faqs-section {
+        padding: 40px 0 20px !important;
+    }
+    .faqs-section .faqs-container {
+        max-width: 540px !important;
+    }
+    .faqs-section .faqs-container h2 {
+        font-size: 20px !important;
+    }
+    .faqs-section .faqs-container .faqs-elements {
+        flex-direction: column !important;
+    }
+}
+
