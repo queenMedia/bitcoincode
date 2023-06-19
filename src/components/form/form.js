@@ -85,7 +85,7 @@ export const Form = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <div className="form-input-group">
-            <span className="country"> +${phonecode}</span>
+            <span className="country">+{phonecode}</span>
             <input
               placeholder="Número de Teléfono"
               className="input-for-form-input-group"
