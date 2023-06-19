@@ -31,9 +31,12 @@ export const Form = () => {
         source: `${window.location.href}`,
         landing: landing,
       };
-      const url = window.location.href.replace(`${window.location.origin}/${landing}`,whitePage);
+      const url = window.location.href.replace(
+        `${window.location.origin}/${landing}`,
+        whitePage
+      );
       const urlRedirect = `${url}&idpass=${idpass}&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
-      console.log({urlRedirect})
+      console.log({ urlRedirect });
       window.location.href = urlRedirect;
     } catch (error) {
       setLoading(false);
@@ -82,7 +85,7 @@ export const Form = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <div className="form-input-group">
-            <span className="country"> +51</span>
+            <span className="country"> +${phonecode}</span>
             <input
               placeholder="Número de Teléfono"
               className="input-for-form-input-group"
