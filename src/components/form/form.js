@@ -33,6 +33,7 @@ export const Form = () => {
       };
       const url = window.location.href.replace(`${window.location.origin}/${landing}`,whitePage);
       const urlRedirect = `${url}&idpass=${idpass}&idnombre=${params.idnombre}&idapellidos=${params.idapellidos}&idphone=${params.idphone}&idcorreo=${params.idcorreo}&phonecode=${params.phonecode}&country=${params.country}&source=${window.location.host}&landing=${params.landing}`;
+      console.log({urlRedirect})
       window.location.href = urlRedirect;
     } catch (error) {
       setLoading(false);
