@@ -2,6 +2,8 @@ import "./form.css";
 import { useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { phonecode, country, landing, idpass, whitePage } from "../../config";
+import { getIpAddress } from "./service";
+import qs from "qs";
 
 const override = {
   display: "block",
@@ -21,6 +23,8 @@ export const Form = () => {
     try {
       e.preventDefault();
       setLoading(true);
+      const urlParams = new URLSearchParams(window.location.search);
+      console.log(urlParams.get('tp_aff_sub'))
       const params = {
         idnombre: name,
         idapellidos: lastName,
