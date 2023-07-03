@@ -1,12 +1,12 @@
 .header {
     width: 100%;
-    height: 56px;
+    height: 76px;
     box-sizing: border-box;
-    background: #FFF;
-    padding: 10px 10px 10px 91px;
+    background: #00062b !important;
+    padding: 0.5rem 1rem;
 }
 
 .image {
-    max-width: 280px;
-    min-width: 100px;
+    height: 60px;
+    padding: 3px;
 }
