@@ -24,7 +24,7 @@ export const Form = () => {
       e.preventDefault();
       setLoading(true);
       const urlParams = new URLSearchParams(window.location.search);
-      console.log(urlParams.get('tp_aff_sub'))
+      console.log(urlParams.get("tp_aff_sub"));
       const params = {
         idnombre: name,
         idapellidos: lastName,
@@ -57,15 +57,7 @@ export const Form = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1 className="form-header">
-        DISPONIBILIDAD LIMITADA{" "}
-        <span className="remark-yellow">
-          Asesor
-          <br />
-          Gratuito
-        </span>{" "}
-        NO ESPERE
-      </h1>
+      <h1 className="form-header">Crea una cuenta</h1>
       {loading ? (
         <PropagateLoader cssOverride={override} />
       ) : (
@@ -110,13 +102,16 @@ export const Form = () => {
           </p>
           <button type="submit" className="button-submit">
             {" "}
-            COMIENCE A OPERAR
+            Registrar agora
           </button>
         </div>
       )}
       <small className="warning">
-        Al completar este formulario, entiendo que seré redirigido a un socio de
-        trading de terceros y que se compartirá mi información personal.
+        *Al enviar, confirmas que has leído y aceptado el <span>política de privacidad</span>{" "}
+        y <br/><span> términos y  condiciones.</span><br/>  **Al enviar este formulario, acepto recibir
+        todo el material de marketing por <br/>  correo electrónico, SMS y teléfono.<br/> 
+        ***Todas las operaciones conllevan riesgos.<br/>  ****Regístrese solo si tiene
+        18 años o más.
       </small>
     </form>
   );
