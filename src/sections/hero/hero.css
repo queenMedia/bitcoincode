@@ -1,49 +1,37 @@
 .hero {
-    width: 100%;
-    height: fit-content;
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-hero) no-repeat center/cover;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-hero) no-repeat center/cover;
 }
-  
-.video {
-    width: 100%;
-    max-width: 939px;
-    min-width: 200px;
-    height: 100%;
-    object-fit: cover;
-    border: 4px solid var(--text-white);
-    border-radius: 3px;
-}
-  
-
 .content-container {
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; 
+  width: 100%;
+  max-width: 1140px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-
-.title {
-    font-size: clamp(30px, 4vw, 55px);
-    color: var(--text-white);
-    margin: 0;
-    text-align: center;
+.hero-text > h1 {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0.67em 0;
+  line-height: 1.2;
 }
-
-.subtitle {
-    font-size: clamp(20px, 1.5vw, 30px);
-    color: var(--text-white);
-    text-align: center;
+.hero-text > p {
+  color: #fff !important;
+  font-size: 30px;
+  font-weight: 600;
 }
-
-.yellow-text {
-    color: var(--text-yellow);
+.hero-text > div {
+  color: #fff !important;
+  font-size: 16px;
+  margin-top: 30px;
 }
-
