@@ -21,7 +21,7 @@ function App() {
       <Actions text="Abra una cuenta gratuita" isUppercase />
       <Faqs />
       <Actions text="Comience a operar" />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

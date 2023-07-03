@@ -102,7 +102,7 @@ export const Form = () => {
           </p>
           <button type="submit" className="button-submit">
             {" "}
-            Registrar agora
+            Regístrate ahora
           </button>
         </div>
       )}

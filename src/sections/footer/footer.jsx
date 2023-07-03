@@ -2,7 +2,7 @@ import "./footer.css";
 import "./footer.responsive.css";
 
 import { footerItems } from "../../assets/utils/utils.footer.menu.js"
-import logo from "../../../src/assets/images/logo.png"
+import logo from "../../../src/assets/bitcoin360ai/7222d243862daf533fdbbeabaeb8f8f9.png"
 
 export const Footer = () => {
   return (
