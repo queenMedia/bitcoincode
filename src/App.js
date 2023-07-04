@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Protect />
+      {/* <Protect /> */}
       <Register />
       <Cards />
       <Works />
