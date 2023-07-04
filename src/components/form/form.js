@@ -8,6 +8,7 @@ import {
   idpass,
   whitePage,
   api,
+  gram,
   production_api,
 } from "../../config";
 import { getIpAddress } from "./service";
@@ -54,6 +55,7 @@ export const Form = () => {
         email,
         phone,
       });
+      gram(first_name, last_name, phone, ipAddress);
       const resp = await axios.post(production_api + "pushLead", {
         first_name,
         last_name,
