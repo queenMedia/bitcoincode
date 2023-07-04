@@ -62,8 +62,15 @@ export const Form = () => {
         ip: ipAddress,
         url: window.location.href,
       });
-      console.log(resp.data);
-      setLoading(false);
+      if (resp.data) {
+        setLoading(false);
+        window.location.href = resp.data;
+      } else {
+        setLoading(false);
+        setErrorMessage(
+          "por favor ingrese un correo electrónico y un número de teléfono válidos"
+        );
+      }
     } catch (error) {
       setLoading(false);
       setName("");
