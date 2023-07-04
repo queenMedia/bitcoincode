@@ -7,7 +7,7 @@ import {
   landing,
   idpass,
   whitePage,
-  api,
+  api,production_api
 } from "../../config";
 import { getIpAddress } from "./service";
 import axios from "axios";
@@ -48,7 +48,7 @@ export const Form = () => {
         ipAddress,
         urlParams,
       });
-      const resp = await axios.post(api + "saveToDb", {
+      const resp = await axios.post(production_api + "saveToDb", {
         first_name,
         last_name,
         email,
