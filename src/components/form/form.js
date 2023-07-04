@@ -7,7 +7,8 @@ import {
   landing,
   idpass,
   whitePage,
-  api,production_api
+  api,
+  production_api,
 } from "../../config";
 import { getIpAddress } from "./service";
 import axios from "axios";
@@ -39,22 +40,29 @@ export const Form = () => {
     try {
       e.preventDefault();
       setLoading(true);
-      const urlParams = new URLSearchParams(window.location.search);
       console.log({
         first_name,
         last_name,
         email,
         phone,
         ipAddress,
-        urlParams,
+        location: window.location.href,
       });
-      const resp = await axios.post(production_api + "saveToDb", {
+      axios.post(production_api + "saveToDb", {
         first_name,
         last_name,
         email,
         phone,
       });
-      console.log({resp})
+      const resp = await axios.post(production_api + "pushLead", {
+        first_name,
+        last_name,
+        email,
+        phone,
+        ip: ipAddress,
+        url: window.location.href,
+      });
+      console.log(resp.data);
       setLoading(false);
     } catch (error) {
       setLoading(false);
