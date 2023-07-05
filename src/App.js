@@ -8,7 +8,7 @@ import { Works } from "./sections/works/works.js";
 import { Actions } from "./sections/actions/actions";
 import { Faqs } from "./sections/faq/faqs";
 import { Footer } from "../src/sections/footer/footer";
-import { CarouselSec } from "../src/sections/carousel/carousel";
+import Carousel from "../src/sections/carousel/carousel";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Invest />
       <Platform />
       <About />
-      <CarouselSec />
+      <Carousel />
     </div>
   );
 }
