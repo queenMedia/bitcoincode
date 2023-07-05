@@ -111,7 +111,7 @@ export const Form = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {/* <div className="form-input-group">
+          <div className="form-input-group">
             <span className="country">+{phonecode}</span>
             <input
               placeholder="Número de Teléfono"
@@ -120,8 +120,8 @@ export const Form = () => {
               value={phone}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
-          </div> */}
-          {/* <p
+          </div> 
+           <p
             style={{
               marginBottom: "5px",
               color: "red",
@@ -130,7 +130,7 @@ export const Form = () => {
             }}
           >
             {errorMessage}
-          </p> */}
+          </p>
           <button type="submit" className="button_submit">
             {" "}
             Enviar formulario

@@ -54,10 +54,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-.form-input {
+.form_input {
     display: block;
     width: 100%;
     border: 1px solid #4e555b;
