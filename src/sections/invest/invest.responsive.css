@@ -1,0 +1,30 @@
+@media (max-width: 1140px) {
+  .invest_container {
+    width: 95%;
+      padding: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .invest_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .invest_icon_container{
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .invest_container {
+    width: calc(100% - 10px);
+    min-width: 0;
+  }
+  .invest{
+    padding: 20px 0;
+  }
+}
+
+
+

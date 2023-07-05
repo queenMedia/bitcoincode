@@ -1,0 +1,32 @@
+@media (max-width: 1140px) {
+  .platform_container {
+      padding: 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  .platform_container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 770px) {
+  .platform_container {
+    flex-direction: column;
+  }
+  .platform_article{
+    width: 100%;
+  }
+.platform_image_container{
+  width: 100%;
+}
+}
+
+@media (max-width: 580px) {
+  .platform_container {
+    width: calc(100% - 10px);
+    min-width: 0;
+    padding: 20px 0;
+  }
+
+}
