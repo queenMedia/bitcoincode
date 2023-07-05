@@ -1,0 +1,112 @@
+{
+    "header":{
+       "button":"Registrirajte se"
+    },
+    "hero":{
+       "title":"Investirajte v Bitcoin",
+       "paragraph":"Strokovnjaki napovedujejo, da bo Bitcoin do konca leta dosegel 318.000 $ *. Zdaj investirajte z Bitcoin 360AI in izkoristite.",
+       "link":{
+          "link_one":"*Vir",
+          "link_two":"forbes.com"
+       }
+    },
+    "form":{
+       "title":"Ustvarite račun",
+       "inputs":{
+          "input_one":"Vnesite svoje ime",
+          "input_two":"Vnesite svoje priimek",
+          "input_three":"Vnesite svoj pravi e-poštni naslov",
+          "input_four":"Vnesite svojo telefonsko številko"
+       },
+       "button":"Pošlji obrazec",
+       "warning":{
+          "warning_one":"*S pošiljanjem potrjujete, da ste prebrali in sprejeli ",
+          "warning_two":"pravilnik o zasebnosti ",
+          "warning_three":"in ",
+          "warning_four":"pogoji uporabe.",
+          "warning_five":"**S pošiljanjem tega obrazca se strinjam, da prejemam marketinški material po elektronski pošti, SMS in telefonu.",
+          "warning_six":"***Vse transakcije nosijo tveganja.",
+          "warning_seven":"****Registrirajte se le, če ste starejši od 18 let."
+       }
+    },
+    "invest":{
+       "title":"Odkrijte najboljše kriptovalute za investiranje danes",
+       "button":"Investirajte zdaj",
+       "texts":{
+          "info_one":{
+             "text_one":"BTC",
+             "text_two":"- Bitcoin"
+          },
+          "info_two":{
+             "text_one":"ETH",
+             "text_two":"- Ethereum"
+          },
+          "info_three":{
+             "text_one":"BCH",
+             "text_two":"- Bitcoin Cash"
+          }
+       },
+       "image_info":{
+          "image_info_one":{
+             "text_one":"BTCUSD Stopnje ",
+             "text_two":"po TradingView"
+          },
+          "image_info_two":{
+             "text_one":"ETHUSD Stopnje ",
+             "text_two":"po TradingView"
+          },
+          "image_info_three":{
+             "text_one":"BCHUSD Stopnje ",
+             "text_two":"po TradingView"
+          }
+       }
+    },
+    "platform":{
+       "title":"Močna intuitivna trgovalna platforma",
+       "paragraph":"Dostopajte do naše inovativne trgovalne platforme. Doživite njen tekoči in enostaven dizajn. Na voljo tako na namiznih računalnikih kot na mobilnih napravah za celovito trgovalno izkušnjo.",
+       "list":{
+          "item_one":"Spletni trgovec",
+          "item_two":"Meta Trader 4 (MT4)",
+          "item_three":"Mobilna spletna stran po meri"
+       }
+    },
+    "about":{
+       "title":"Zakaj vlagati v Bitcoin?",
+       "paragraph":{
+          "paragraph_one":"Bitcoin je bil leta 2013 vreden 100 $. Leta 2018 je do reached a value of $20,000. Peter Brandt iz Forbesa je dejal, da je Bitcoin na \"popolni ravni nakupa\" in to je eden glavnih razlogov, da se institucionalni vlagatelji hitro zbirajo.",
+          "paragraph_two":"Bitcoin je še vedno v zgodnji fazi, tehnologija veriženja blokov pa se eksponentno razvija. Zgodnje začetje pomeni, da lahko postanete del njegove rasti.",
+          "paragraph_three":"Naložbe in trgovanje z Bitcoinom je mogoče izvajati kadarkoli, kar vam omogoča prilagajanje vaših naložb brez ovir."
+       },
+       "source":{
+          "source_one":"Vir:",
+          "source_two":"forbes.com"
+       }
+    },
+    "currency":{
+       "title":"Najboljše valute za trgovanje trenutno",
+       "button":"Investirajte zdaj",
+       "links":{
+          "link_one":"Spletno soglasje",
+          "link_two":"Opozorilo o tveganju",
+          "link_three":"Pravilnik o zasebnosti",
+          "link_four":"Prijavi zlorabo",
+          "link_five":"Kontaktirajte nas"
+       }
+    },
+    "footer":{
+       "paragraph":{
+          "paragraph_one":"UREDBA IN OPOZORILO O VISOKEM RIZIKU PRI NALOŽBAH: Trgovanje s Forexom, CFD-ji in kriptovalutami je zelo tvegano in morda ni primerno za vse vlagatelje. Lahko izgubite del ali vso vloženo kapital, zato ne smete tvegati kapitala, ki si ga ne morete privoščiti izgubiti. Kliknite tukaj za celotno opozorilo o tveganju. Bitcoin 360AI je tehnološka, marketinška in oglaševalska storitev. Bitcoin 360AI ne pridobiva dobička na podlagi vaših trgovalnih rezultatov in deluje kot tehnološka, marketinška in oglaševalska storitev. Bitcoin 360AI ni finančno podjetje in ne deluje kot finančno podjetje. Uporablja se samo kot marketinško orodje tretjih oglaševalcev in posrednikov za pridobivanje strank. Vaša obveznost je preveriti in se odločiti, ali se posrednik, s katerim ste povezani, uporablja za vse lokalne predpise in predpise ter je urejen v vaši državi in ​​ima dovoljenje za sprejem strank s vaše lokacije, preden napolnite svoj račun pri posredniku in začnete z njim trgovati. Prosimo, da prijavite Bitcoin 360AI (s klikom na prijavo zlorabe), če ugotovite, da posrednik, dodeljen vam, ni urejen v vaši pristojnosti, tako da lahko prekli žemo vaš račun pri Bitcoinu 360AI.",
+          "paragraph_two":"Obvezani smo potencialnim vlagateljem povedati, da pretekla uspešnost naše programske opreme ne napoveduje nujno prihodnjih rezultatov, zato ne smete tvegati s kapitalom, ki si ga ne morete privoščiti izgubiti.",
+          "paragraph_three":"OPOMBA O UREDITVI ZDA: Možnost trgovanja ni urejena v Združenih državah. Bitcoin 360AI ni nadzorovan ali urejen s strani finančnih agencij niti ameriških agencij. Kakršna koli neregulirana trgovalna dejavnost za prebivalce ZDA je nezakonita. Bitcoin 360AI ne sprejema strank, ki se nahajajo v Združenih državah ali imajo ameriško državljanstvo.",
+          "paragraph_four":"IZJAVA O RIZIKU SPLETNE STRANI: Bitcoin 360AI ne prevzema nobene odgovornosti za izgubo ali škodo zaradi zanašanja na informacije, ki jih vsebuje ta spletna stran; to vključuje izobraževalni material, cenovne ponudbe in grafikone ter analize. Prosimo, bodite pozorni na tveganja, povezana s trgovanjem na finančnih trgih; nikoli ne investirajte več denarja, kot si ga lahko privoščite izgubiti. Tveganja pri trgovanju s Forexom, CFD-ji in kriptovalutami morda niso primerna za vse vlagatelje. Bitcoin 360AI ne prevzema odgovornosti za morebitne izgube pri trgovanju, do katerih lahko pride zaradi uporabe podatkov, ki so gostovani na tej spletni strani.",
+          "paragraph_five":"PRAVNE OMEJITVE: Brez omejevanja zgoraj navedenih določb razumete, da se zakoni glede finančnih pogodb razlikujejo po svetu, in da je vaša odgovornost, da se pravilno držite vseh zakonov, predpisov ali smernic v vaši državi prebivališča, ki se nanašajo na uporabo spletnega mesta. Da ne bi bilo dvoma, zmožnost dostopa do našega spletnega mesta ne pomeni nujno, da so naše storitve in/ali vaše dejavnosti prek spletnega mesta zakonite v skladu z zakoni, predpisi ali direktivami, ki so relevantni za vašo državo prebivališča.",
+          "paragraph_six":"Upoštevajte, da Bitcoin 360AI prejema provizije za usmerjanje uporabnikov k odprtju računa pri posrednikih/oglaševalcih in/ali za usmerjanje prometa na spletno mesto oglaševalca.",
+ 
+ 
+          "paragraph_seven":"Za dodatne informacije o naših pravilih in pogojih ter politiki zasebnosti se obrnite na nas ali preverite ustrezne strani na naši spletni strani.",
+          "paragraph_eight":"Prosimo, upoštevajte, da smo natančno prevedli in prilagodili besedilo glede na zahteve prevoda. Če imate kakršna koli vprašanja ali pomisleke, se obrnite na nas.",
+          "paragraph_nine":"Hvala vam, ker ste se odločili uporabiti Bitcoin 360AI. Želimo vam uspešno in varno trgovanje!",
+          "signature":"Ekipa Bitcoin 360AI"
+       }
+    }
+ }

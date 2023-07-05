@@ -8,8 +8,8 @@ import { About } from "./sections/about/about.js";
 import { Currency } from "./sections/currency/currency.js";
 import { Footer } from "../src/sections/footer/footer"
 import { Modal } from "./components/modal/modal.js";
-
 function App() {
+  // const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {

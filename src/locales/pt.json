@@ -1,0 +1,109 @@
+{
+    "header": {
+      "button": "Registrar"
+    },
+    "hero": {
+      "title": "Invista em Bitcoin",
+      "paragraph": "Os especialistas preveem que o Bitcoin atingirá US$ 318.000 até o final do ano. Invista agora com o Bitcoin 360AI e aproveite.",
+      "link": {
+        "link_one": "*Fonte",
+        "link_two": "forbes.com"
+      }
+    },
+    "form": {
+      "title": "Crie uma conta",
+      "inputs": {
+        "input_one": "Por favor, insira seu nome",
+        "input_two": "Por favor, insira seu sobrenome",
+        "input_three": "Por favor, insira seu e-mail real",
+        "input_four": "Por favor, insira seu número de telefone"
+      },
+      "button": "Enviar formulário",
+      "warning": {
+        "warning_one": "*Ao enviar, você confirma que leu e aceitou a ",
+        "warning_two": "política de privacidade ",
+        "warning_three": "e ",
+        "warning_four": "termos e condições.",
+        "warning_five": " **Ao enviar este formulário, concordo em receber todo o material de marketing por e-mail, SMS e telefone.",
+        "warning_six": "***Todas as operações envolvem riscos.",
+        "warning_seven": "****Registre-se apenas se tiver 18 anos ou mais."
+      }
+    },
+    "invest": {
+      "title": "Descubra as melhores criptomoedas para investir hoje",
+      "button": "Investir agora",
+      "texts": {
+        "info_one": {
+          "text_one": "BTC",
+          "text_two": "- Bitcoin"
+        },
+        "info_two": {
+          "text_one": "ETH",
+          "text_two": "- Ethereum"
+        },
+        "info_three": {
+          "text_one": "BCH",
+          "text_two": "- Bitcoin Cash"
+        }
+      },
+      "image_info": {
+        "image_info_one": {
+          "text_one": "Taxas BTCUSD ",
+          "text_two": "por TradingView"
+        },
+        "image_info_two": {
+          "text_one": "Taxas ETHUSD ",
+          "text_two": "por TradingView"
+        },
+        "image_info_three": {
+          "text_one": "Taxas BCHUSD ",
+          "text_two": "por TradingView"
+        }
+      }
+    },
+    "platform": {
+      "title": "Plataforma de negociação poderosa e intuitiva",
+      "paragraph": "Obtenha acesso à nossa inovadora plataforma de negociação. Experimente seu design fluido e fácil de usar. Disponível tanto em desktop quanto em dispositivos móveis para uma experiência completa de negociação.",
+      "list": {
+        "item_one": "Web Trader",
+        "item_two": "Meta Trader 4 (MT4)",
+        "item_three": "Web móvel personalizada"
+      }
+    },
+    "about": {
+      "title": "Por que investir em Bitcoin?",
+      "paragraph": {
+        "paragraph_one": "O Bitcoin valia US$ 100 em 2013. Em 2018, atingiu o valor de US$ 20.000. Peter Brandt, da Forbes, afirmou que o Bitcoin está no \"nível de compra\" perfeito, e essa é uma grande razão pela qual os investidores institucionais estão se acumulando rapidamente.",
+        "paragraph_two": "O Bitcoin ainda está em estágios iniciais, e a tecnologia blockchain está evoluindo exponencialmente. Entrar cedo significa fazer parte de seu crescimento.",
+        "paragraph_three": "Investir e negociar Bitcoin pode ser feito a qualquer momento, oferecendo a flexibilidade de trabalhar com seus investimentos sem obstáculos."
+      },
+      "source": {
+        "source_one": "Fonte:",
+        "source_two": "forbes.com"
+      }
+    },
+    "currency": {
+      "title": "As melhores moedas para negociar agora",
+      "button": "Investir agora",
+      "links": {
+        "link_one": "Contrato do Site",
+        "link_two": "Aviso de Risco",
+        "link_three": "Política de Privacidade",
+        "link_four": "Denunciar Abuso",
+        "link_five": "Entre em Contato"
+      }
+    },
+    "footer": {
+      "paragraph": {
+        "paragraph_one": "REGULAÇÃO E AVISO DE INVESTIMENTO DE ALTO RISCO: Negociar Forex, CFDs e criptomoedas é altamente especulativo, envolve um nível de risco e pode não ser adequado para todos os investidores. Você pode perder parte ou todo o seu capital investido, portanto, não especule com capital que não possa perder. Clique aqui para ler um aviso de risco completo. O Bitcoin 360AI é um serviço de tecnologia, marketing e publicidade. O Bitcoin 360AI não obtém lucros ou perdas com base nos seus resultados de negociação e atua apenas como um serviço de tecnologia, marketing e publicidade. O Bitcoin 360AI não é uma empresa de serviços financeiros e não opera como tal, sendo usado apenas como uma ferramenta de marketing por anunciantes de terceiros e corretoras para atrair clientes. É sua responsabilidade verificar e decidir se o corretor com o qual você foi conectado cumpre todas as regras e regulamentos locais e se está regulamentado na jurisdição do seu país e autorizado a receber clientes da sua localização atual antes de financiar sua conta junto ao corretor e começar a negociar com ele. Por favor, relate o Bitcoin 360AI (clicando em \"Denunciar Abuso\") se você descobrir que o corretor atribuído a você não é regulamentado em sua jurisdição, para que possamos encerrar sua conta com o Bitcoin 360AI.",
+        "paragraph_two": "Somos obrigados a informar potenciais investidores que o desempenho passado do nosso software não necessariamente prevê resultados futuros, portanto, não especule com capital que não possa perder.",
+        "paragraph_three": "AVISO DE REGULAÇÃO DOS EUA: A negociação de opções não é regulamentada nos Estados Unidos. O Bitcoin 360AI não é supervisionado nem regulamentado por agências financeiras ou agências dos EUA. Qualquer atividade de negociação não regulamentada por residentes nos EUA é considerada ilegal. O Bitcoin 360AI não aceita clientes localizados nos Estados Unidos ou com cidadania americana.",
+        "paragraph_four": "DIVULGAÇÃO DE RISCOS DO SITE: O Bitcoin 360AI não aceita nenhuma responsabilidade por perdas ou danos como resultado da confiança nas informações contidas neste site; isso inclui material educacional, cotações de preços e gráficos e análises. Esteja ciente dos riscos associados à negociação nos mercados financeiros; nunca invista mais dinheiro do que você pode arriscar perder. Os riscos envolvidos na negociação de Forex, CFDs e criptomoedas podem não ser adequados para todos os investidores. O Bitcoin 360AI não se responsabiliza por quaisquer perdas comerciais que você possa enfrentar como resultado do uso dos dados hospedados neste site.",
+        "paragraph_five": "RESTRIÇÕES LEGAIS: sem limitar as disposições abaixo mencionadas, você entende que as leis relacionadas a contratos financeiros variam em todo o mundo, e é sua responsabilidade garantir que você cumpra adequadamente qualquer lei, regulamentação ou diretriz em seu país de residência em relação ao uso do Site. Para evitar qualquer dúvida, a capacidade de acessar nosso Site não significa necessariamente que nossos Serviços e/ou suas atividades por meio do Site sejam legais de acordo com as leis, regulamentos ou diretrizes relevantes para o seu país de residência.",
+        "paragraph_six": "Observe que o Bitcoin 360AI recebe taxas de publicidade por direcionar usuários para abrir uma conta com corretoras/anunciantes e/ou por direcionar tráfego para o site do anunciante.",
+        "paragraph_seven": "Se você acredita que chegou a esta página devido a irregularidades e/ou informações enganosas de um anúncio, pré-lander, e-mail ou qualquer outra promoção de um site/promotor de terceiros, ou por favor, denuncie clicando em \"Denunciar Abuso\"",
+        "paragraph_eight": "Colocamos cookies em seu computador para ajudar a melhorar sua experiência ao visitar este site. Você pode alterar as configurações de cookies em seu computador a qualquer momento. O uso deste site indica sua aceitação da Política de Privacidade deste site.",
+        "paragraph_nine": "© 2023 Todos os direitos reservados - Bitcoin 360AI"
+      }
+    }
+  }

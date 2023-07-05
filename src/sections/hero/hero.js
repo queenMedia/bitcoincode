@@ -1,18 +1,20 @@
 import { Form } from "../../components/form/form";
 import "./hero.css";
 import "./hero.responsive.css";
+import { useTranslation } from 'react-i18next';
 
 export const Hero = (props) => {
+  const { t } = useTranslation();
+  
   return (
     <section className="hero">
       <div className="hero_container">
         <article className="hero_container_article">
-          <h1 className="hero_container_article_title">Invierta en Bitcoin</h1>
+          <h1 className="hero_container_article_title">{t('hero.title')}</h1>
             <p className="hero_container_article_paragraph">
-              Los expertos predicen que Bitcoin alcanzará los $ 318,000 * para fin
-              de año. Invierta ahora con Bitcoin 360AI y aproveche.
+            {t('hero.paragraph')}
             </p>
-            <p className="hero_container_article_link">*Fuente: <a className="hero_article_link_href" onClick={()=> props.openModal()}>forbes.com</a></p>
+            <p className="hero_container_article_link">{t('hero.link.link_one')} <a className="hero_article_link_href" onClick={()=> props.openModal()}>{t('hero.link.link_two')}</a></p>
         </article>
         <Form warning />
       </div>

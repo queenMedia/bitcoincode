@@ -1,6 +1,7 @@
 import "./currency.css";
 import "./currency.responsive.css";
 
+import { useTranslation } from 'react-i18next';
 import C415 from "../../assets/bitcoin360ai/invest/icons/currency_415.png";
 import C416 from "../../assets/bitcoin360ai/invest/icons/currency_416.png";
 import C417 from "../../assets/bitcoin360ai/invest/icons/currency_417.png";
@@ -14,12 +15,14 @@ import C425 from "../../assets/bitcoin360ai/invest/icons/currency_425.png";
 import C426 from "../../assets/bitcoin360ai/invest/icons/currency_426.png";
 import C427 from "../../assets/bitcoin360ai/invest/icons/currency_427.png";
 import C428 from "../../assets/bitcoin360ai/invest/icons/currency_428.png";
+
 export const Currency = (props) => {
+  const { t } = useTranslation();
   return (
     <section className="currency">
         <div className="currency_container">
           <h1 className="currency_title">
-            Las mejores divisas para operar ahora mismo
+            {t('currency.title')}
           </h1>
           <div className="currency_items">
               <img src={C415} alt="img" className="currency_image" />
@@ -38,23 +41,23 @@ export const Currency = (props) => {
               <img src={C422} alt="img" className="currency_image" />
           </div>
           <button className="currency_button" onClick={()=> props.openModal()}>
-            Invertir ahora
+            {t('currency.button')}
           </button>
           <div className="currency_footer">
               <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
-                Website Agreement
+                {t('currency.links.link_one')}
               </a>
               <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
-                Risk Disclaimer
+                {t('currency.links.link_two')}
               </a>
               <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
-                Privacy Policy
+                {t('currency.links.link_three')}
               </a>
               <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
-                Report Abuse
+                {t('currency.links.link_four')}
               </a>
               <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
-                Contact Us
+                {t('currency.links.link_five')}
               </a>
           </div>
         </div>

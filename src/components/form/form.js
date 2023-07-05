@@ -14,7 +14,7 @@ import {
 } from "../../config";
 import { getIpAddress } from "./service";
 import axios from "axios";
-
+import { useTranslation } from 'react-i18next';
 const override = {
   display: "block",
   margin: "0 auto",
@@ -22,6 +22,7 @@ const override = {
 };
 
 export const Form = (props) => {
+  const { t } = useTranslation();
   const [first_name, setName] = useState("");
   const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -91,25 +92,25 @@ export const Form = (props) => {
        {!props.warning ?
             <button className="close_modal" type="button" onClick={()=> props.closeModal()}>x</button>
           : null}
-      <h1 className="form_header">Crea una cuenta</h1>
+      <h1 className="form_header">{t('form.title')} </h1>
       {loading ? (
         <PropagateLoader cssOverride={override} />
       ) : (
         <div className="body_form">
           <input
-            placeholder="Por favor, introduzca su nombre de pila"
+            placeholder={t('form.inputs.input_one')}
             className="form_input"
             value={first_name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
-            placeholder="Por favor, introduzca su apellido"
+            placeholder={t('form.inputs.input_two')}
             className="form_input"
             value={last_name}
             onChange={(e) => setLastName(e.target.value)}
           />
           <input
-            placeholder="Por favor, introduzca su correo electrónico real"
+            placeholder={t('form.inputs.input_three')}
             className="form_input"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -117,7 +118,7 @@ export const Form = (props) => {
           <div className="form-input-group">
             <span className="country">+{phonecode}</span>
             <input
-              placeholder="Número de Teléfono"
+              placeholder={t('form.inputs.input_four')}
               className="input-for-form-input-group"
               type="number"
               value={phone}
@@ -136,7 +137,7 @@ export const Form = (props) => {
           </p>
           <button type="submit" className="button_submit">
             {" "}
-            Enviar formulario
+            {t('form.button')}
           </button>
         </div>
       )}
@@ -144,16 +145,16 @@ export const Form = (props) => {
       (
         <>
         <span className="warning" data-intgrtn-i18n="intgrtn-span-69">
-        *Al enviar, confirmas que has leído y aceptado el 
-        <a href="#" className="warning_link"> política de privacidad </a>
-        y
-        <a href="#" className="warning_link"> términos y condiciones.</a>
+        {t('form.warning.warning_one')}
+        <a href="#" className="warning_link"> {t('form.warning.warning_two')}</a>
+        {t('form.warning.warning_three')}
+        <a href="#" className="warning_link">{t('form.warning.warning_four')} </a>
         <br/>
-        **Al enviar este formulario, acepto recibir todo el material de marketing por correo electrónico, SMS y teléfono.
+       {t('form.warning.warning_five')}
         <br/>
-        ***Todas las operaciones conllevan riesgos.
+        {t('form.warning.warning_six')}
         <br/>
-        ****Regístrese solo si tiene 18 años o más.
+        {t('form.warning.warning_seven')}
       </span>
         </>
       ) : null}

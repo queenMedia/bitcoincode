@@ -1,0 +1,111 @@
+{
+    "header": {
+      "button": "Sign Up"
+    },
+    "hero": {
+      "title": "Invest in Bitcoin",
+      "paragraph": "Experts predict that Bitcoin will reach $318,000* by the end of the year. Invest now with Bitcoin 360AI and take advantage.",
+      "link": {
+        "link_one": "*Source",
+        "link_two": "forbes.com"
+      }
+    },
+    "form": {
+      "title": "Create an Account",
+      "inputs": {
+        "input_one": "Please enter your first name",
+        "input_two": "Please enter your last name",
+        "input_three": "Please enter your valid email address",
+        "input_four": "Please enter your phone number"
+      },
+      "button": "Submit Form",
+      "warning": {
+        "warning_one": "*By submitting, you confirm that you have read and accepted the ",
+        "warning_two": "privacy policy ",
+        "warning_three": "and ",
+        "warning_four": "terms and conditions.",
+        "warning_five": " **By submitting this form, I agree to receive all marketing material via email, SMS, and phone.",
+        "warning_six": "***All transactions carry risks.",
+        "warning_seven": "****Register only if you are 18 years old or older."
+      }
+    },
+    "invest": {
+      "title": "Discover the Best Cryptocurrencies to Invest in Today",
+      "button": "Invest Now",
+      "texts": {
+        "info_one": {
+          "text_one": "BTC",
+          "text_two": "- Bitcoin"
+        },
+        "info_two": {
+          "text_one": "ETH",
+          "text_two": "- Ethereum"
+        },
+        "info_three": {
+          "text_one": "BCH",
+          "text_two": "- Bitcoin Cash"
+        }
+      },
+      "image_info": {
+        "image_info_one": {
+          "text_one": "BTCUSD Rates ",
+          "text_two": "by TradingView"
+        },
+        "image_info_two": {
+          "text_one": "ETHUSD Rates ",
+          "text_two": "by TradingView"
+        },
+        "image_info_three": {
+          "text_one": "BCHUSD Rates ",
+          "text_two": "by TradingView"
+        }
+      }
+    },
+    "platform": {
+      "title": "Powerful and Intuitive Trading Platform",
+      "paragraph": "Get access to our innovative trading platform. Experience its fluid and user-friendly design. Available on both desktop and mobile for a complete trading experience.",
+      "list": {
+        "item_one": "Web Trader",
+        "item_two": "Meta Trader 4 (MT4)",
+        "item_three": "Custom Mobile Web"
+      }
+    },
+    "about": {
+      "title": "Why Invest in Bitcoin?",
+      "paragraph": {
+        "paragraph_one": "Bitcoin was worth $100 in 2013. In 2018, it reached a value of $20,000. Peter Brandt from Forbes has stated that Bitcoin is at the perfect \"buy level,\" and this is a major reason why institutional investors are rapidly accumulating.",
+        "paragraph_two": "Bitcoin is still in an early stage, and blockchain technology is evolving exponentially. Getting in early means you can be part of its growth.",
+        "paragraph_three": "Bitcoin investment and trading can be done anytime, giving you the flexibility to work with your investments without hindrances."
+      },
+      "source": {
+        "source_one": "Source:",
+        "source_two": "forbes.com"
+      }
+    },
+    "currency": {
+      "title": "The Best Currencies to Trade Right Now",
+      "button": "Invest Now",
+      "links": {
+        "link_one": "Website Agreement",
+        "link_two": "Risk Disclaimer",
+        "link_three": "Privacy Policy",
+        "link_four": "Report Abuse",
+        "link_five": "Contact Us"
+      }
+    },
+    "footer": {
+      "paragraph": {
+        "paragraph_one": "REGULATION & HIGH RISK INVESTMENT WARNING: Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please click here to read a full risk warning. Bitcoin 360AI is a technology, marketing and advertising service. Bitcoin 360AI does not gain or lose profits based on your trading results and operates as a technology, marketing and advertising service. Bitcoin 360AI is not a financial services firm and does not operate as a financial services firm and is only used as a marketing tool by third party advertisers and brokers to attract customers. Its your obligation to check and decide weather the broker you were connected to applies to all local rules and regulations and is regulated in your country jurisdiction and is allowed to receive customers from your location your are in, before you fund your account with the broker and start trading with it. please report Bitcoin 360AI (by clicking report abuse) if you find that the broker assigned to you is not regulated in your jurisdiction so we can cancel your account with Bitcoin 360AI.",
+        "paragraph_two": "We are required to tell potential investors that our software's past performance does not necessarily predict future results, therefore you should not speculate with capital that you cannot afford to lose.",
+        "paragraph_three": "USA REGULATION NOTICE: Option trading is not regulated within the United States. Bitcoin 360AI is not supervised or regulated by any financial agencies nor US agencies. Any unregulated trading activity by U.S. residents is considered unlawful. Bitcoin 360AI does not accept customers located within the United States or holding an American citizenship.",
+        "paragraph_four": "SITE RISK DISCLOSURE: Bitcoin 360AI does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in trading Forex, CFDs and Cryptocurrencies may not be suitable for all investors. Bitcoin 360AI doesn't retain responsibility for any trading losses you might face as a result of using the data hosted on this site.",
+        "paragraph_five": "LEGAL RESTRICTIONS: without limiting the undermentioned provisions, you understand that laws regarding financial contracts vary throughout the world, and it is your responsibility to make sure you properly comply with any law, regulation or guideline in your country of residence regarding the use of the Site. To avoid any doubt, the ability to access our Site does not necessarily mean that our Services and/or your activities through the Site are legal under the laws, regulations or directives relevant to your country of residence.",
+        "paragraph_six": "Please note that Bitcoin 360AI receives advertising fees for directing users to open an account with the brokers/advertisers and/or for driving traffic to the advertiser website.",
+        "paragraph_seven": "If you feel you landed on this page by wrongdoings and/or misleading information of an advertisement, pre lander, email or any other promotions of a 3rd partywebsite/promoter or by please report it by clicking REPORT ABUSE",
+        "paragraph_eight": "We have placed cookies on your computer to help improve your experience when visiting this website. You can change cookie settings on your computer at any time. Use of this website indicates your acceptance of this website's Privacy Policy.",
+        "paragraph_nine": "© 2023 All Rights Reserved - Bitcoin 360AI"
+  
+      }
+    }
+  }
+  

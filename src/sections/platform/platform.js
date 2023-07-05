@@ -3,27 +3,29 @@ import "./platform.responsive.css";
 import Phone from "../../assets/bitcoin360ai/invest/img/phone.png";
 import Desktop from "../../assets/bitcoin360ai/invest/img/desktop.png";
 
+import { useTranslation } from 'react-i18next';
+
 export const Platform = (props) => {
+  const { t } = useTranslation();
   return (
     <section className="platform">
       <div className="platform_container">
         <article className="platform_article">
           <h1 className="platform_article_title">
-            Potente plataforma de
-            negociación intuitiva
+          {t('platform.title')}
           </h1>
           <p className="platform_article_paragraph">
-            Obtenga acceso a nuestra innovadora plataforma comercial. Experimente su diseño fluido y fácil de usar. Disponible tanto desde una computadora de escritorio como desde un dispositivo móvil para una experiencia comercial completa.
+          {t('platform.paragraph')}
           </p>
           <ul className="platform_article_list">
             <li className="platform_article_list_item">
-              Web Trader
+            {t('platform.list.item_one')}
             </li>
             <li className="platform_article_list_item">
-              Meta Trader 4 (MT4)
+            {t('platform.list.item_two')}
             </li>
             <li className="platform_article_list_item">
-              Web móvil a medida
+            {t('platform.list.item_three')}
             </li>
           </ul>
           <img src={Desktop} alt="computer" className="platform_article_image" />
