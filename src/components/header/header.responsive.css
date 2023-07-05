@@ -1,8 +1,14 @@
-@media (max-width: 500px) {
-    .header_container {
-        max-width: 1053px;
-    }
-    .header_button{
-        max-width: 80%;
-    }
+@media (max-width: 800px) {
+  .header_container {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
   }
+  .header_button {
+    max-width: 80%;
+  }
+  .header_image {
+    height: 45px;
+    margin: auto;
+  }
+}
