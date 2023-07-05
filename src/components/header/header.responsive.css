@@ -1,6 +1,6 @@
-@media (max-width: 990px) {
+@media (max-width: 500px) {
     .header_container {
-        flex-direction: column;
+        max-width: 1053px;
     }
     .header_button{
         max-width: 80%;
