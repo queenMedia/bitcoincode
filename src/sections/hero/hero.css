@@ -5,7 +5,6 @@
   align-items: center;
   background: var(--bg-hero) no-repeat center/cover;
 }
-
 .hero_container{
   width: 100%;
   max-width: 1140px;
@@ -24,21 +23,19 @@
   justify-content: flex-start;
   gap: 27px;
 }
-
 .hero_container_article_title{
   color: var(--text-white);
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
   font-size: 40px;
 }
 
 .hero_container_article_paragraph{
   color: var(--text-white);
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
   font-size: 30px;
 }
-
 .hero_container_article_link{
   color: var(--text-white);
   font-weight: 400;
@@ -46,6 +43,3 @@
   font-size: 16px;
   opacity: 0.6;
 }
-
-
-
