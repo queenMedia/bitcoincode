@@ -1,0 +1,30 @@
+.currency{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency_container{
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.currency_items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency_button{
+  width: 60%;
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 20px;
+  color: var(--text-white);
+  background: var(--bg-color-green);
+}

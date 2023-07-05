@@ -4,8 +4,10 @@ import logo from "../../../src/assets/bitcoin360ai/7222d243862daf533fdbbeabaeb8f
 export const Header = (props) => {
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="image" />
-      <button>Registrarse</button>
+      <div className="header_container">
+        <img src={logo} alt="logo" className="header_image" />
+        <button className="header_button">Registrarse</button>
+      </div>
     </header>
   );
 };
