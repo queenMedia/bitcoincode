@@ -2,4 +2,7 @@
   .form {
     max-width: none;
   }
+  .warning1{
+    display: none;
+  }
 }

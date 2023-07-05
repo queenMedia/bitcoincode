@@ -88,9 +88,15 @@ export const Form = (props) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-       {!props.warning ?
-            <button className="close_modal" type="button" onClick={()=> props.closeModal()}>x</button>
-          : null}
+      {!props.warning ? (
+        <button
+          className="close_modal"
+          type="button"
+          onClick={() => props.closeModal()}
+        >
+          x
+        </button>
+      ) : null}
       <h1 className="form_header">Crea una cuenta</h1>
       {loading ? (
         <PropagateLoader cssOverride={override} />
@@ -140,24 +146,35 @@ export const Form = (props) => {
           </button>
         </div>
       )}
-      {props.warning ?
-      (
+      {props.warning & !loading ? (
         <>
-        <span className="warning" data-intgrtn-i18n="intgrtn-span-69">
-        *Al enviar, confirmas que has leído y aceptado el 
-        <a href="#" className="warning_link"> política de privacidad </a>
-        y
-        <a href="#" className="warning_link"> términos y condiciones.</a>
-        <br/>
-        **Al enviar este formulario, acepto recibir todo el material de marketing por correo electrónico, SMS y teléfono.
-        <br/>
-        ***Todas las operaciones conllevan riesgos.
-        <br/>
-        ****Regístrese solo si tiene 18 años o más.
-      </span>
+          <span className="warning" data-intgrtn-i18n="intgrtn-span-69">
+            *Al enviar, confirmas que has leído y aceptado el
+            <a href="#" className="warning_link">
+              {" "}
+              política de privacidad{" "}
+            </a>
+            y
+            <a href="#" className="warning_link">
+              {" "}
+              términos y condiciones.
+            </a>
+            <br />
+            **Al enviar este formulario, acepto recibir todo el material de
+            marketing por correo electrónico, SMS y teléfono.
+            <br />
+            ***Todas las operaciones conllevan riesgos.
+            <br />
+            ****Regístrese solo si tiene 18 años o más.
+          </span>
         </>
-      ) : null}
-      
+      ) : (
+        <>
+          <span className="warning1" data-intgrtn-i18n="intgrtn-span-69">
+     
+          </span>
+        </>
+      )}
     </form>
   );
 };

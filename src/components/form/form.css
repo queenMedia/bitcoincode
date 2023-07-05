@@ -187,7 +187,9 @@
     font-weight: 400 !important;
     margin-top: 5px;
 }
-
+.warning1{
+    height: 400px;
+}
 .warning_link{
   text-decoration: none;
   color: var(--text-links);
