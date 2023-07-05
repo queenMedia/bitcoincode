@@ -88,6 +88,9 @@ export const Form = (props) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+       {!props.warning ?
+            <button className="close_modal" type="button" onClick={()=> props.closeModal()}>x</button>
+          : null}
       <h1 className="form_header">Crea una cuenta</h1>
       {loading ? (
         <PropagateLoader cssOverride={override} />

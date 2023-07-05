@@ -37,23 +37,23 @@ export const Currency = (props) => {
               <img src={C428} alt="img" className="currency_image" />
               <img src={C422} alt="img" className="currency_image" />
           </div>
-          <button className="currency_button">
+          <button className="currency_button" onClick={()=> props.openModal()}>
             Invertir ahora
           </button>
           <div className="currency_footer">
-              <a href="#" className="currency_footer_link">
+              <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
                 Website Agreement
               </a>
-              <a href="#" className="currency_footer_link">
+              <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
                 Risk Disclaimer
               </a>
-              <a href="#" className="currency_footer_link">
+              <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
                 Privacy Policy
               </a>
-              <a href="#" className="currency_footer_link">
+              <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
                 Report Abuse
               </a>
-              <a href="#" className="currency_footer_link">
+              <a href="#" className="currency_footer_link" onClick={()=> props.openModal()}>
                 Contact Us
               </a>
           </div>

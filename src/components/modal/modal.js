@@ -3,7 +3,7 @@ import { Form } from "../form/form";
 export const Modal = (props) => {
   return (
     <div className="modal">
-        <Form warning={false} />
+        <Form warning={false} closeModal={props.closeModal} />
     </div>
   );
 };

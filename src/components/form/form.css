@@ -9,6 +9,7 @@
     background: var(--bg-color-form);
     padding: 10px 20px 20px 20px;
     border-radius: 20px;
+    position: relative;
 }
 
 .form_header{
@@ -142,7 +143,19 @@
     outline: none;
   }
 
-
+.close_modal{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    border: none;
+    background: transparent;
+    color: var(--text-white);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}
 
 .form-input:focus {
     outline: none;

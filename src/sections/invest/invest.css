@@ -59,6 +59,7 @@
   padding: 10px;
   font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .invest_chart{

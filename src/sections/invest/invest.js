@@ -22,13 +22,13 @@ export const Invest = (props) => {
         <div className="invest_container_chart">
           <img src={Coin_Chart} alt="coin" className="invest_chart" />
           <p className="invest_container_chart_paragraph">
-            <a href="#" className="invest_container_chart_paragraph_link">
+            <a href="#" className="invest_container_chart_paragraph_link" onClick={()=> props.openModal()}>
               BTCUSD Rates  {" "}
             </a>
             by TradingView
           </p>
         </div>
-        <button className="invest_button">
+        <button className="invest_button" onClick={()=> props.openModal()}>
           Invertir ahora
         </button>
         <div className="invest_icon_container">
@@ -36,15 +36,15 @@ export const Invest = (props) => {
           <p className="invest_paragraph"><b>BTC</b>-Bitcoin</p>
         </div>
         <div className="invest_container_chart">
-          <img src={Cash_Chart} alt="coin" className="invest_chart" />
+          <img src={Eth_Chart} alt="coin" className="invest_chart" />
           <p className="invest_container_chart_paragraph">
-            <a href="#" className="invest_container_chart_paragraph_link">
+            <a href="#" className="invest_container_chart_paragraph_link" onClick={()=> props.openModal()}>
               ETHUSD Rates {" "}
             </a>
             by TradingView
           </p>
         </div>
-        <button className="invest_button">
+        <button className="invest_button" onClick={()=> props.openModal()}>
           Invertir ahora
         </button>
         <div className="invest_icon_container">
@@ -54,13 +54,13 @@ export const Invest = (props) => {
         <div className="invest_container_chart">
           <img src={Cash_Chart} alt="coin" className="invest_chart" />
           <p className="invest_container_chart_paragraph">
-            <a href="#" className="invest_container_chart_paragraph_link">
+            <a href="#" className="invest_container_chart_paragraph_link" onClick={()=> props.openModal()}>
               BCHUSD Rates {" "}
             </a>
             by TradingView
           </p>
         </div>
-        <button className="invest_button">
+        <button className="invest_button" onClick={()=> props.openModal()}>
           Invertir ahora
         </button>
       </article>
