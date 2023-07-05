@@ -53,6 +53,14 @@ const Carousel = () => {
       <div className="carousel-container" >
         <div className="image-container">{renderImages()}</div>
       </div>
+      <button>Invertir ahora</button>
+      <div className="carousel-spans">
+        <a>Website Agreement</a>
+        <a>Risk Disclaimer</a>
+        <a>Privacy Policy</a>
+        <a>Report Abuse</a>
+        <a>Contact Us</a>
+      </div>
     </div>
   );
 };

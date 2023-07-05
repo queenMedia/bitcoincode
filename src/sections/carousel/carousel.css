@@ -14,32 +14,81 @@
   font-size: 40px;
   font-weight: 200;
 }
-.carousel-container{
+.carousel-container {
   max-width: 1140px;
- width: 100%;
+  width: 100%;
 }
 .carousel-image {
   flex: 0 0 calc(100% / 6); /* Adjust the value based on the number of images per page */
   max-width: 100%;
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 5s ease-in-out;
 }
 
 .carousel-image.transition {
   opacity: 1;
   transform: translateX(0);
+  transition: transform 5s ease-in-out;
 }
 
-.image-container{
+.image-container {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   width: 300px;
-  height: 300px;
+  height: 100%;
 }
 
 .image-container > img {
-  width: 120px;
-  height: 120px;
+  width: 14 0px;
+  height: 140px;
   margin: 20px 35px;
+  transition: transform 5s ease-in-out;
+}
+
+.carousel > button {
+  -webkit-font-smoothing: antialiased;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, sans-serif;
+  line-height: 1.25;
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.15s linear;
+  -webkit-appearance: none;
+  letter-spacing: 0;
+  display: block;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  border: none !important;
+  cursor: pointer;
+  background-color: #6daf0f;
+  outline: none;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.carousel > button:hover {
+  color: black;
+}
+
+.carousel-spans{
+	display: flex;
+  width: 100%;
+  margin-top: 50px;
+	justify-content: space-around;
+}
+.carousel-spans > a{
+color: #007bff;
+}
+.carousel-spans > a:hover{
+color: #0056b3;
 }
