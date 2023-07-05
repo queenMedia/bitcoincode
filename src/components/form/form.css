@@ -1,6 +1,6 @@
 .form {
     width: 100%;
-    max-width: 385px;
+    max-width: 375px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -14,12 +14,11 @@
 .form_header{
   text-align: center;
   color: var(--text-white);
-  font-weight: 100;
+  font-weight: 300;
   padding-bottom: 20px;
   padding-top: 40px;
   font-size: 30px;
   font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
-  opacity: 0.6;
 }
 
 .form_input{
