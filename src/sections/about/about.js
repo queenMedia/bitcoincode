@@ -36,6 +36,7 @@ export const About = (props) => {
             La inversión y el comercio de Bitcoin se pueden realizar en cualquier momento, lo que le brinda la flexibilidad de trabajar con sus inversiones sin obstáculos.
           </p>
         </div>
+        <span className="link">Fuente, forbes.com</span>
       </article>
     </section>
   );

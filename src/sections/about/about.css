@@ -1,5 +1,6 @@
-.about{
+.about {
   width: 100%;
+  height: 500px;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -21,7 +22,7 @@
   font-size: 40px;
   color: var(--text-white);
   font-weight: 200;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .about_row_container {
@@ -32,11 +33,11 @@
 .about_row_paragraph {
   width: 80%;
   font-size: 20px;
-  font-weight: 100;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-weight: 350;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
   color: var(--text-white);
 }
-.about_image_container{
+.about_image_container {
   width: 20%;
   display: flex;
   justify-content: center;
@@ -45,4 +46,11 @@
 .about_image {
   width: 63px;
   height: 70px;
+}
+.link {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 0;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
