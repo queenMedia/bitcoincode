@@ -14,7 +14,7 @@
 .form_header{
   text-align: center;
   color: var(--text-white);
-  font-weight: 100;
+  font-weight: 200;
   padding-bottom: 20px;
   padding-top: 40px;
   font-size: 30px;
@@ -157,6 +157,7 @@
   background: var(--bg-color-green);
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .button-submit:hover {

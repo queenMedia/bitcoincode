@@ -1,0 +1,31 @@
+@media (max-width: 1140px) {
+    .currency_container {
+        padding: 20px;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .currency_container {
+      width: 80%;
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .currency_footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .currency_button{
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .currency_container {
+      width: calc(100% - 10px);
+      min-width: 0;
+    }
+  }

@@ -12,9 +12,9 @@ export const Hero = (props) => {
               Los expertos predicen que Bitcoin alcanzará los $ 318,000 * para fin
               de año. Invierta ahora con Bitcoin 360AI y aproveche.
             </p>
-            <p className="hero_container_article_link">*Fuente: forbes.com</p>
+            <p className="hero_container_article_link">*Fuente: <a className="hero_article_link_href" onClick={()=> props.openModal()}>forbes.com</a></p>
         </article>
-        <Form />
+        <Form warning />
       </div>
     </section>
   );

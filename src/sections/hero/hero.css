@@ -47,5 +47,16 @@
   opacity: 0.6;
 }
 
+.hero_article_link_href{
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 400;
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 16px;
+  cursor: pointer;
+}
 
+.hero_article_link_href:hover{
+  text-decoration: underline;
+}
 

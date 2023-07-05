@@ -21,7 +21,7 @@ const override = {
   borderColor: "red",
 };
 
-export const Form = () => {
+export const Form = (props) => {
   const [first_name, setName] = useState("");
   const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -111,7 +111,7 @@ export const Form = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {/* <div className="form-input-group">
+          <div className="form-input-group">
             <span className="country">+{phonecode}</span>
             <input
               placeholder="Número de Teléfono"
@@ -120,8 +120,8 @@ export const Form = () => {
               value={phone}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
-          </div> */}
-          {/* <p
+          </div>
+          <p
             style={{
               marginBottom: "5px",
               color: "red",
@@ -130,14 +130,17 @@ export const Form = () => {
             }}
           >
             {errorMessage}
-          </p> */}
+          </p>
           <button type="submit" className="button_submit">
             {" "}
             Enviar formulario
           </button>
         </div>
       )}
-      <span className="warning" data-intgrtn-i18n="intgrtn-span-69">
+      {props.warning ?
+      (
+        <>
+        <span className="warning" data-intgrtn-i18n="intgrtn-span-69">
         *Al enviar, confirmas que has leído y aceptado el 
         <a href="#" className="warning_link"> política de privacidad </a>
         y
@@ -149,6 +152,9 @@ export const Form = () => {
         <br/>
         ****Regístrese solo si tiene 18 años o más.
       </span>
+        </>
+      ) : null}
+      
     </form>
   );
 };

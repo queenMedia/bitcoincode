@@ -1,9 +1,19 @@
-@media (max-width: 768px) {
-    .footer-menu {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 40px;
+@media (max-width: 1140px) {
+    .footer_container {
+        padding: 20px;
     }
-}
+  }
+  
+  @media (max-width: 990px) {
+    .footer_container {
+      width: 80%;
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .footer_container {
+      width: calc(100% - 10px);
+      min-width: 0;
+    }
+  }

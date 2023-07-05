@@ -1,53 +1,44 @@
-.footer {
-    background-color: #00062b ;
-    height: auto;
-    padding: 80px 0;
-    position: relative;
-    width: 100%; 
-}
-.footer .footer-container {
-    height: auto;
-    margin: 0 auto;
-    max-width: 1500px;
-    padding: 0 20px;
-    width: 100%;
-}
-.footer .footer-container .footer-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-.footer .footer-container .footer-menu .footer-item {
-    list-style: none;
-}
-.footer .footer-container .footer-menu .footer-item a {
-    color: #1e40af;
-    display: block;
-    font-family: "Cabin", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    text-align: center;
-    text-decoration: none;
+.footer{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer .footer-container .footer-logo {
-    height: auto;
-    margin: 0 auto;
-    max-width: 300px;
-    position: relative;
-    width: 100%;
+.footer_container{
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
-.footer .footer-container .footer-logo a {
-    cursor: pointer;
-    transition: all .1s linear;
+.footer_image_container_main{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--bg-color-border);
 }
-.footer .footer-container .footer-logo a img{
-    height: auto;
-    max-width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-style: none;
-    vertical-align: middle;
+
+.footer_image_container{
+  height: 100px;
+  width: auto;
+  background: var(--text-title);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.footer_image{
+  width: 100%;
+  height: auto;
+}
+
+.footer_text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: var(--text-footer);
+  text-align: center;
 }
