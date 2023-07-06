@@ -3,7 +3,7 @@
     transform: translateX(0); 
   }
 	100% { 
-    transform: translateX(calc(-218px * 7))
+    transform: translateX(calc(-160px * 7))
   }
 }
 
