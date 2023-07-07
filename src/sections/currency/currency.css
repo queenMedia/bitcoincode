@@ -51,6 +51,11 @@
     cursor: pointer;
 }
 
+.currency_button:hover{
+  background: var(--bg-button-hover);
+  color: var(--text-black);
+}
+
 .currency_items{
   width: calc(218px * 14);
   display: flex;

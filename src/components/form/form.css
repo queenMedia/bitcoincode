@@ -120,7 +120,7 @@
     width: 18px;
     height: 18px;
     content: '';
-    background: var(--bg-country-code-flag) no-repeat center/cover;
+    background: var(--bg-country-code-flag-es) no-repeat center/cover;
 }
 
 .form-header {
@@ -171,6 +171,11 @@
   border-radius: 6px;
   border: none;
   cursor: pointer;
+}
+
+.button_submit:hover{
+    background: var(--bg-button-hover);
+    color: var(--text-black);
 }
 
 .button-submit:hover {

@@ -62,6 +62,11 @@
     cursor: pointer;
 }
 
+.invest_button:hover{
+  background: var(--bg-button-hover);
+  color: var(--text-black);
+}
+
 .invest_chart{
   width: 90%;
 }
