@@ -120,7 +120,7 @@
     width: 18px;
     height: 18px;
     content: '';
-    background: var(--bg-country-code-flag-fr) no-repeat center/cover;
+    background: var(--bg-country-code-flag-pt) no-repeat center/cover;
 }
 
 .form-header {
