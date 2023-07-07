@@ -1,5 +1,5 @@
 import axios from "axios";
-export const phonecode = "51";
+export const phonecode = "386";
 export const country = "PE";
 export const landing = "bitcoin-code";
 export const idpass = "123qwe321";

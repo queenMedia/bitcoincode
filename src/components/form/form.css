@@ -105,7 +105,7 @@
 }
 
 .country {
-    max-width: 65px;
+    max-width: 75px;
     height: 41px;
     padding: 6px 12px;
     display: flex;
@@ -120,7 +120,7 @@
     width: 18px;
     height: 18px;
     content: '';
-    background: var(--bg-country-code-flag-pt) no-repeat center/cover;
+    background: var(--bg-country-code-flag-sl) no-repeat center/cover;
 }
 
 .form-header {
